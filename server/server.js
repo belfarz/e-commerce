@@ -74,7 +74,7 @@ app.get("/api/cars/:id",async (req, res) => {
                 return res.status(401).json({ message: "No user with those credentials found!" });
             }
 
-            // At the very least, don't send the password back to the client 😅
+            
             //foundUser.password = undefined
             res.status(200).json({
                 user: foundUser,
